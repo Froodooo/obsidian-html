@@ -12,7 +12,7 @@ class Vault:
 
         self.html_template = html_template
         if html_template:
-            with open(html_template) as f:
+            with open(html_template, "r", encoding="utf8") as f:
                 self.html_template = f.read()
 
     def _add_backlinks(self):
