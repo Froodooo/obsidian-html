@@ -9,7 +9,7 @@ def slug_case(text):
 
 
 def md_link(text, link):
-    return "[" + text + "](" + link + ")"
+    return "[" + text + "](/garden/" + link + ")"
 
 
 def find_files(vault_root, extra_folders, no_extension=False):
